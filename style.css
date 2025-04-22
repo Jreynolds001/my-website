@@ -375,7 +375,7 @@ body.services-page {
    Responsive Layout for Mobile
 ==================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .services-hero-image .services-grid {
     grid-template-columns: 1fr;
     gap: 15px;
