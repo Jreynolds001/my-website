@@ -269,22 +269,21 @@ header {
    Services Page
 ==================================== */
 body.services-page {
+  padding-top: 80px;
+  background-color: #000; /* fallback in case image fails */
+}
+
+.services-wrapper {
   background-image: url("images/img9.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100%;
-  height: auto;
-}
-
-.services-wrapper {
+  background-attachment: scroll;
   max-width: 1100px;
-  margin: 100px auto;
+  margin: 100px auto 60px;
   padding: 20px;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   animation: fadeIn 1s ease-in-out;
 }
