@@ -281,13 +281,15 @@ body.services-page {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding-top: 120px;
-  padding-bottom: 100px;
+  height: auto;
   position: relative;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .services-hero-image::after {
@@ -297,7 +299,7 @@ body.services-page {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -320,13 +322,26 @@ body.services-page {
   margin-bottom: 50px;
 }
 
+/* === Unified Service Box === */
+.services-container {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 .services-hero-image .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .services-hero-image .service-card {
@@ -356,7 +371,10 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive layout for mobile */
+/* ====================================
+   Responsive Layout for Mobile
+==================================== */
+
 @media (max-width: 768px) {
   .services-hero-image .services-grid {
     grid-template-columns: 1fr;
@@ -369,6 +387,11 @@ body.services-page {
 
   .services-hero-image .hero p {
     font-size: 1rem;
+  }
+
+  .services-container {
+    padding: 25px 15px;
+    border-radius: 8px;
   }
 }
 
