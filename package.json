@@ -1,0 +1,23 @@
+{
+  "name": "pw-vs-code-4.0---copy",
+  "version": "1.0.0",
+  "main": "auto-push.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jreynolds001/my-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jreynolds001/my-website/issues"
+  },
+  "homepage": "https://github.com/Jreynolds001/my-website#readme",
+  "description": "",
+  "devDependencies": {
+    "chokidar": "^4.0.3"
+  }
+}
