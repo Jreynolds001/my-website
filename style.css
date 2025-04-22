@@ -378,11 +378,11 @@ body.services-page {
 @media (max-width: 768px) {
   .services-hero-image .services-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
   }
 
   .services-hero-image .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .services-hero-image .hero p {
@@ -391,17 +391,30 @@ body.services-page {
 
   .services-container {
     background-color: rgba(0, 0, 0, 0.65);
-    padding: 20px 10px; /* moved from inner @media */
-    border-radius: 10px;
-    max-width: 100%; /* moved from inner @media */
+    padding: 15px 12px;
+    border-radius: 8px;
+    max-width: 90%;
     width: 100%;
     margin: 0 auto;
     z-index: 2;
     position: relative;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     box-sizing: border-box;
+  }
+
+  .services-hero-image .service-card {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+
+  .services-hero-image .service-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .services-hero-image .service-card p {
+    font-size: 0.95rem;
   }
 }
 
