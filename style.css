@@ -459,22 +459,25 @@ body.contact-page {
 /* ====================================
    Quote Page – Form & Animation
 ==================================== */
+
 body.quote-page {
   background-image: url("images/heroquote.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
-  min-height: 100vh;
+  min-height: 100vh; /* ensures background covers full height */
 }
 
 .quote-container {
   max-width: 700px;
+  width: 90%; /* makes container responsive */
   margin: 80px auto;
   padding: 40px 30px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.85); /* slightly translucent black */
   border-radius: 8px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   animation: fadeIn 1.2s ease-in-out;
 }
 
@@ -482,13 +485,12 @@ body.quote-page {
   text-align: center;
   font-size: 1.75rem;
   margin-bottom: 10px;
-  color: white;
 }
 
 .quote-container p {
   text-align: center;
-  color: #ffffff;
   margin-bottom: 30px;
+  color: #ddd;
 }
 
 .quote-form {
@@ -504,6 +506,8 @@ body.quote-page {
   border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
 }
 
 .quote-form textarea {
@@ -526,17 +530,6 @@ body.quote-page {
   background-color: #004466;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .quote-form input:focus,
 .quote-form textarea:focus,
 .quote-form select:focus {
@@ -550,4 +543,38 @@ body.quote-page {
 .quote-form textarea:hover,
 .quote-form select:hover {
   border: 2px solid #00bfff;
+}
+
+/* === Fade-in Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Mobile Adjustments === */
+@media (max-width: 768px) {
+  .quote-container {
+    margin: 60px auto;
+    padding: 25px 20px;
+  }
+
+  .quote-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .quote-container p {
+    font-size: 1rem;
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    font-size: 1rem;
+  }
 }
