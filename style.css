@@ -341,7 +341,7 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
