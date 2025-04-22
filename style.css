@@ -222,7 +222,8 @@ header {
   margin-right: auto;
   color: white;
   animation: fadeIn 1.2s ease-in-out;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari and iOS fix */
+  backdrop-filter: blur(4px); /* Modern browsers */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -310,6 +311,7 @@ body.services-page {
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 
