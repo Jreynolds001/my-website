@@ -341,21 +341,21 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Mobile: stack cards and adjust layout */
 @media (max-width: 600px) {
   .services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
 
-  .services-wrapper {
-    margin: 40px 10px;
-    padding: 15px;
-  }
+.services-wrapper {
+  margin: 40px 10px;
+  padding: 15px;
+}
 
-  .hero-image {
-    height: 60vh; /* reduce hero height for smaller screens */
-  }
+.hero-image {
+  height: 60vh; /* reduce hero height for smaller screens */
+}
 
 /* ====================================
    About Page
