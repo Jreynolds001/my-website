@@ -51,12 +51,14 @@
             <input type="email" placeholder="Your Email" required />
             <input type="tel" placeholder="Your Phone Number" required />
             <input type="text" placeholder="Service Address (optional)" />
-            <select required>
+            <label for="service">Select a service</label>
+            <select id="service" name="service" required>
               <option value="">Select a service</option>
               <option>Home Exterior</option>
               <option>Driveway & Sidewalk</option>
               <option>Commercial Property</option>
             </select>
+            
             <textarea
               placeholder="Tell us about your project..."
               required
