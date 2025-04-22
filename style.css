@@ -393,260 +393,263 @@ body.services-page {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 30px 20px;
     border-radius: 10px;
-    max-width: 900px; /* Shrunk from 1100px */
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     z-index: 2;
     position: relative;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    box-sizing: border-box;
   }
-}
 
-@media (max-width: 768px) {
-  .services-container {
-    padding: 20px 12px;
-    max-width: 95%;
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 20px 10px;
+      max-width: 100%;
+      width: 100%;
+    }
   }
-}
 
-/* ====================================
+  /* ====================================
    About Page
 ==================================== */
-body.about-page {
-  background-image: url("images/img6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
-}
+  body.about-page {
+    background-image: url("images/img6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    min-height: 100vh;
+    height: auto;
+  }
 
-.about-section {
-  max-width: 900px;
-  margin: 100px auto;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-  animation: fadeIn 1.2s ease-in-out;
-}
+  .about-section {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
 
-.about-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-.about-section p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  line-height: 1.8;
-}
+  .about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
 
-/* ====================================
+  /* ====================================
    Gallery Page
 ==================================== */
-body.gallery-page {
-  background-image: url("images/img5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
-}
+  body.gallery-page {
+    background-image: url("images/img5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    min-height: 100vh;
+    height: auto;
+  }
 
-.gallery-section {
-  max-width: 900px;
-  margin: 100px auto;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-}
+  .gallery-section {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
 
-/* ====================================
+  /* ====================================
    FAQs Page
 ==================================== */
-body.faqs-page {
-  background-image: url("images/img7.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
-}
+  body.faqs-page {
+    background-image: url("images/img7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    min-height: 100vh;
+    height: auto;
+  }
 
-.faqs-section {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-}
+  .faqs-section {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
 
-/* ====================================
+  /* ====================================
    Contact Page
 ==================================== */
-body.contact-page {
-  background-image: url("images/img8.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
-}
+  body.contact-page {
+    background-image: url("images/img8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    min-height: 100vh;
+    height: auto;
+  }
 
-.contact-section {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 40px 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  animation: fadeIn 1.2s ease-in-out;
-}
+  .contact-section {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
 
-.contact-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
+  .contact-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
 
-.contact-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 15px;
-  color: #ddd;
-}
+  .contact-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #ddd;
+  }
 
-/* ====================================
+  /* ====================================
    Quote Page – Form & Animation
 ==================================== */
 
-body.quote-page {
-  background-image: url("images/heroquote.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100vh; /* ensures background covers full height */
-  height: auto;
-}
-
-.quote-container {
-  max-width: 700px;
-  width: 90%; /* makes container responsive */
-  margin: 80px auto;
-  padding: 40px 30px;
-  background-color: rgba(0, 0, 0, 0.85); /* slightly translucent black */
-  border-radius: 8px;
-  color: white;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-.quote-container h2 {
-  text-align: center;
-  font-size: 1.75rem;
-  margin-bottom: 10px;
-}
-
-.quote-container p {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #ddd;
-}
-
-.quote-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.quote-form input,
-.quote-form select,
-.quote-form textarea {
-  padding: 12px;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #000;
-}
-
-.quote-form textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.quote-form button {
-  background-color: #005a87;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.quote-form button:hover {
-  background-color: #004466;
-}
-
-.quote-form input:focus,
-.quote-form textarea:focus,
-.quote-form select:focus {
-  outline: none;
-  border: 1px solid #00bfff;
-  box-shadow: 0 0 6px rgba(0, 191, 255, 0.6);
-  transition: box-shadow 0.3s ease, border 0.3s ease;
-}
-
-.quote-form input:hover,
-.quote-form textarea:hover,
-.quote-form select:hover {
-  border: 2px solid #00bfff;
-}
-
-/* === Fade-in Animation === */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  body.quote-page {
+    background-image: url("images/heroquote.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    min-height: 100vh; /* ensures background covers full height */
+    height: auto;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* === Mobile Adjustments === */
-@media (max-width: 768px) {
   .quote-container {
-    margin: 60px auto;
-    padding: 25px 20px;
+    max-width: 700px;
+    width: 90%; /* makes container responsive */
+    margin: 80px auto;
+    padding: 40px 30px;
+    background-color: rgba(0, 0, 0, 0.85); /* slightly translucent black */
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
   }
 
   .quote-container h2 {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
   }
 
   .quote-container p {
-    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+
+  .quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .quote-form input,
-  .quote-form textarea,
-  .quote-form select {
+  .quote-form select,
+  .quote-form textarea {
+    padding: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
     font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+  }
+
+  .quote-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .quote-form button {
+    background-color: #005a87;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .quote-form button:hover {
+    background-color: #004466;
+  }
+
+  .quote-form input:focus,
+  .quote-form textarea:focus,
+  .quote-form select:focus {
+    outline: none;
+    border: 1px solid #00bfff;
+    box-shadow: 0 0 6px rgba(0, 191, 255, 0.6);
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+  }
+
+  .quote-form input:hover,
+  .quote-form textarea:hover,
+  .quote-form select:hover {
+    border: 2px solid #00bfff;
+  }
+
+  /* === Fade-in Animation === */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* === Mobile Adjustments === */
+  @media (max-width: 768px) {
+    .quote-container {
+      margin: 60px auto;
+      padding: 25px 20px;
+    }
+
+    .quote-container h2 {
+      font-size: 1.5rem;
+    }
+
+    .quote-container p {
+      font-size: 1rem;
+    }
+
+    .quote-form input,
+    .quote-form textarea,
+    .quote-form select {
+      font-size: 1rem;
+    }
   }
 }
