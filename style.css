@@ -268,34 +268,27 @@ header {
 /* ====================================
    Services Page
 ==================================== */
-
-html,
-body {
-  height: auto;
-  min-height: 100%;
+body.services-page {
+  padding-top: 80px;
+  background-color: #000;
 }
 
-body.services-page {
+.full-screen-bg {
   background-image: url("images/img9.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 80px;
-
-  /* KEY FIXES */
-  min-height: 100vh; /* full screen minimum */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .services-wrapper {
-  flex: 1; /* fills the remaining height */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* stack content from the top */
   max-width: 1100px;
-  margin: 100px auto;
+  margin: 60px auto;
   padding: 20px;
+  text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -352,7 +345,7 @@ body.services-page {
   }
 
   .services-wrapper {
-    margin: 60px 20px 60px;
+    margin: 40px 20px;
     padding: 20px;
   }
 
