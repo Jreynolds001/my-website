@@ -321,7 +321,7 @@ body.services-page {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  min-width: 0; /* ensure grid items can shrink properly */
+  min-width: 0;
   word-wrap: break-word;
 }
 
@@ -341,19 +341,11 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Mobile: stack cards */
+/* Mobile: stack cards and adjust layout */
 @media (max-width: 600px) {
   .services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-}
-
-/* Tablet & up: 2x2 layout */
-@media (min-width: 601px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
   }
 
   .services-wrapper {
@@ -361,25 +353,9 @@ body.services-page {
     padding: 15px;
   }
 
-  .service-card {
-    min-width: 0; /* allows it to shrink */
-    word-wrap: break-word;
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+  .hero-image {
+    height: 60vh; /* reduce hero height for smaller screens */
   }
-
-  .service-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .service-card p {
-    font-size: 0.95rem;
-  }
-}
 
 /* ====================================
    About Page
