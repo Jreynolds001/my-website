@@ -266,13 +266,14 @@ header {
 }
 
 /* ====================================
-   Services Page – Custom Hero Section
+   Services Page – Fullscreen Hero Image
 ==================================== */
 
 body.services-page {
   background: none;
-  padding-top: 80px;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .services-hero-image {
@@ -280,16 +281,15 @@ body.services-page {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
+  width: 100%;
   position: relative;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 100%;
   overflow: hidden;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 .services-hero-image::after {
@@ -304,11 +304,14 @@ body.services-page {
 }
 
 .services-hero-image .hero {
+  position: relative;
   z-index: 2;
-  color: white;
   text-align: center;
-  width: 100%;
+  color: white;
   padding: 0 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .services-hero-image .hero h1 {
@@ -319,102 +322,17 @@ body.services-page {
 .services-hero-image .hero p {
   font-size: 1.2rem;
   color: #ddd;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
-/* === Unified Service Box === */
-.services-container {
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 40px 30px;
-  border-radius: 12px;
-  max-width: 1100px;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-}
-
-.services-hero-image .services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.services-hero-image .service-card {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  color: #fff;
-  word-wrap: break-word;
-}
-
-.services-hero-image .service-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.services-hero-image .service-card p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-}
-
-.services-hero-image .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-/* ====================================
-   Responsive Layout for Mobile
-==================================== */
-
-@media (max-width: 150px) {
-  .services-hero-image .services-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
+/* Mobile adjustments */
+@media (max-width: 768px) {
   .services-hero-image .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .services-hero-image .hero p {
     font-size: 1rem;
-  }
-
-  .services-container {
-    background-color: rgba(0, 0, 0, 0.65);
-    padding: 15px 12px;
-    border-radius: 8px;
-    max-width: 90%;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 2;
-    position: relative;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    box-sizing: border-box;
-  }
-
-  .services-hero-image .service-card {
-    padding: 16px;
-    font-size: 0.95rem;
-  }
-
-  .services-hero-image .service-card h3 {
-    font-size: 1.15rem;
-  }
-
-  .services-hero-image .service-card p {
-    font-size: 0.95rem;
   }
 }
 
