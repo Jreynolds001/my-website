@@ -539,16 +539,16 @@ body.services-page {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 80px;
-    min-height: 100vh; /* ensures background covers full height */
+    min-height: 100vh;
     height: auto;
   }
 
   .quote-container {
     max-width: 700px;
-    width: 90%; /* makes container responsive */
+    width: 90%;
     margin: 80px auto;
     padding: 40px 30px;
-    background-color: rgba(0, 0, 0, 0.85); /* slightly translucent black */
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 8px;
     color: white;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
@@ -631,6 +631,7 @@ body.services-page {
     }
   }
 
+  /* === Mobile Adjustments === */
   @media (max-width: 768px) {
     .quote-container {
       margin: 60px auto;
@@ -650,5 +651,5 @@ body.services-page {
     .quote-form select {
       font-size: 1rem;
     }
-  } /* ← This closing brace was missing */
+  }
 }
