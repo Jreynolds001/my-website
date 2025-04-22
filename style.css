@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 100vh;
   scroll-behavior: smooth;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -78,7 +79,6 @@ header {
   display: none;
 }
 
-/* Responsive Navbar */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -142,7 +142,6 @@ header {
   z-index: 2;
 }
 
-/* Hero Animations */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -266,15 +265,15 @@ header {
 }
 
 /* ====================================
-   Services Page Background
+   Services Page
 ==================================== */
-
 body.services-page {
-  background-image: url("images/img9.jpg"); /* or whichever one you like */
+  background-image: url("images/img9.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
+  min-height: 100vh;
 }
 
 .services-wrapper {
@@ -283,7 +282,7 @@ body.services-page {
   padding: 20px;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay box */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   animation: fadeIn 1s ease-in-out;
 }
@@ -301,14 +300,9 @@ body.services-page {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   justify-content: center;
-}
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .service-card {
@@ -335,8 +329,24 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-wrapper {
+    margin: 60px 20px;
+    padding: 20px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+}
+
 /* ====================================
-   About Page Background
+   About Page
 ==================================== */
 body.about-page {
   background-image: url("images/img6.jpg");
@@ -345,14 +355,12 @@ body.about-page {
   background-repeat: no-repeat;
   padding-top: 80px;
 }
-/* ====================================
-   About Page Content Styles
-==================================== */
+
 .about-section {
   max-width: 900px;
   margin: 100px auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark box */
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 8px;
   text-align: center;
@@ -371,10 +379,10 @@ body.about-page {
 }
 
 /* ====================================
-   Gallery Page Background
+   Gallery Page
 ==================================== */
 body.gallery-page {
-  background-image: url("images/img5.jpg"); /* or any image you prefer */
+  background-image: url("images/img5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -385,37 +393,38 @@ body.gallery-page {
   max-width: 900px;
   margin: 100px auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 8px;
   text-align: center;
 }
 
 /* ====================================
-   FAQs Page Background
+   FAQs Page
 ==================================== */
 body.faqs-page {
-  background-image: url("images/img7.jpg"); /* Or swap with any of your uploaded images */
+  background-image: url("images/img7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
 }
+
 .faqs-section {
   max-width: 800px;
   margin: 100px auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 8px;
   text-align: center;
 }
 
 /* ====================================
-   Contact Page Background
+   Contact Page
 ==================================== */
 body.contact-page {
-  background-image: url("images/img8.jpg"); /* Swap with any other if preferred */
+  background-image: url("images/img8.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,7 +435,7 @@ body.contact-page {
   max-width: 800px;
   margin: 100px auto;
   padding: 40px 30px;
-  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   color: white;
   text-align: center;
@@ -445,10 +454,6 @@ body.contact-page {
   color: #ddd;
 }
 
-.contact-details p {
-  margin: 10px 0;
-}
-
 /* ====================================
    Quote Page – Form & Animation
 ==================================== */
@@ -458,6 +463,7 @@ body.quote-page {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
+  min-height: 100vh;
 }
 
 .quote-container {
