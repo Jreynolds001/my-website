@@ -332,8 +332,8 @@ body.services-page {
   z-index: 2;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .services-hero-image .services-grid {
