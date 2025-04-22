@@ -268,28 +268,19 @@ header {
 /* ====================================
    Services Page – Fullscreen Hero Image
 ==================================== */
-
-body.services-page {
-  background: none;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
 .services-hero-image {
   background-image: url("images/img9.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  position: relative;
+  height: 90vh; /* slightly shorter */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  position: relative;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .services-hero-image::after {
@@ -299,19 +290,22 @@ body.services-page {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 
 .services-hero-image .hero {
-  position: relative;
   z-index: 2;
-  text-align: center;
   color: white;
-  padding: 0 20px;
-  width: 100%;
+  text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  animation: fadeUp 1s ease-out;
 }
 
 .services-hero-image .hero h1 {
@@ -322,11 +316,31 @@ body.services-page {
 .services-hero-image .hero p {
   font-size: 1.2rem;
   color: #ddd;
-  margin-bottom: 0;
 }
 
-/* Mobile adjustments */
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile tweaks */
 @media (max-width: 768px) {
+  .services-hero-image {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .services-hero-image .hero {
+    padding: 20px;
+  }
+
   .services-hero-image .hero h1 {
     font-size: 2rem;
   }
