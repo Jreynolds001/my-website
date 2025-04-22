@@ -631,7 +631,6 @@ body.services-page {
     }
   }
 
-  /* === Mobile Adjustments === */
   @media (max-width: 768px) {
     .quote-container {
       margin: 60px auto;
@@ -651,5 +650,5 @@ body.services-page {
     .quote-form select {
       font-size: 1rem;
     }
-  }
+  } /* ← This closing brace was missing */
 }
