@@ -289,10 +289,13 @@ body.services-page {
 }
 
 .services-wrapper {
+  flex: 1; /* fills the remaining height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* stack content from the top */
   max-width: 1100px;
-  margin: 100px auto 60px; /* Added bottom margin for breathing room */
+  margin: 100px auto;
   padding: 20px;
-  text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
