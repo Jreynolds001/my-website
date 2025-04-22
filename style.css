@@ -281,7 +281,11 @@ body.services-page {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
-  min-height: 100vh;
+
+  /* KEY FIXES */
+  min-height: 100vh; /* full screen minimum */
+  display: flex;
+  flex-direction: column;
 }
 
 .services-wrapper {
