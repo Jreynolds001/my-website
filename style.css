@@ -367,7 +367,7 @@ body.services-page {
 
   @media (max-width: 768px) {
     .services-hero-image {
-      height: 80vh;
+      height: 50vh;
     }
   }
 
