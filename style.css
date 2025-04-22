@@ -266,7 +266,7 @@ header {
 }
 
 /* ====================================
-   Services Page (Inside Hero Section)
+   Services Page – Custom Hero Section
 ==================================== */
 
 body.services-page {
@@ -280,10 +280,14 @@ body.services-page {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0 60px;
-  height: auto; /* Grows with content */
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 100px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .services-hero-image::after {
@@ -293,26 +297,35 @@ body.services-page {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
   z-index: 1;
 }
 
 .services-hero-image .hero {
-  position: relative;
   z-index: 2;
   color: white;
   text-align: center;
-  padding-bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.services-hero-image .hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.services-hero-image .hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 50px;
 }
 
 .services-hero-image .services-grid {
-  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -343,11 +356,19 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive layout for service cards */
+/* Responsive layout for mobile */
 @media (max-width: 768px) {
   .services-hero-image .services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .services-hero-image .hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-hero-image .hero p {
+    font-size: 1rem;
   }
 }
 
