@@ -399,6 +399,8 @@ body.gallery-page {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
+  min-height: 100vh;
+  height: auto;
 }
 
 .gallery-section {
@@ -420,6 +422,8 @@ body.faqs-page {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
+  min-height: 100vh;
+  height: auto;
 }
 
 .faqs-section {
@@ -441,6 +445,8 @@ body.contact-page {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
+  min-height: 100vh;
+  height: auto;
 }
 
 .contact-section {
