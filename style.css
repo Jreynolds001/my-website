@@ -289,7 +289,7 @@ header {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -303,28 +303,26 @@ header {
   z-index: 2;
 }
 
-.services-wrapper {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 20px;
-  color: white;
-  text-align: center;
+.hero-contact-box {
+  margin-top: 40px;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto 0;
 }
 
 .service-card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 20px;
   border-radius: 10px;
-  color: white;
-  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   transition: 0.3s ease;
+  color: white;
 }
 
 .service-card:hover {
