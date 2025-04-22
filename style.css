@@ -403,6 +403,13 @@ body.services-page {
   }
 }
 
+@media (max-width: 768px) {
+  .services-container {
+    padding: 20px 12px;
+    max-width: 95%;
+  }
+}
+
 /* ====================================
    About Page
 ==================================== */
