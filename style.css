@@ -282,6 +282,8 @@ body.services-page {
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 120px;
+  margin-top: -80px;
+  padding-top: 200px;
   padding-bottom: 100px;
   position: relative;
   display: flex;
