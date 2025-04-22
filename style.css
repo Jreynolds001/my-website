@@ -283,17 +283,11 @@ body.services-page {
   background-repeat: no-repeat;
   padding-top: 80px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .services-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   max-width: 1100px;
-  margin: 100px auto 0;
+  margin: 100px auto 60px;
   padding: 20px;
   text-align: center;
   color: white;
