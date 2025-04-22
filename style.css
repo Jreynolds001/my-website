@@ -365,6 +365,12 @@ body.services-page {
     gap: 20px;
   }
 
+  @media (max-width: 768px) {
+    .services-hero-image {
+      height: 100vh;
+    }
+  }
+
   .services-hero-image .hero h1 {
     font-size: 2rem;
   }
