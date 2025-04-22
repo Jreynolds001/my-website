@@ -467,6 +467,7 @@ body.quote-page {
   background-repeat: no-repeat;
   padding-top: 80px;
   min-height: 100vh; /* ensures background covers full height */
+  height: auto;
 }
 
 .quote-container {
