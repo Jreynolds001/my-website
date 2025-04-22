@@ -321,6 +321,8 @@ body.services-page {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+  min-width: 0; /* ensure grid items can shrink properly */
+  word-wrap: break-word;
 }
 
 .service-card h3 {
@@ -339,13 +341,17 @@ body.services-page {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 768px) {
+/* Stack on very small devices */
+@media (max-width: 480px) {
   .services-grid {
-    display: grid;
-    grid-template-columns: repeat(
-      2,
-      minmax(0, 1fr)
-    ); /* 👈 this guarantees two columns even in tight space */
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2x2 grid for mobile and tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px;
     justify-items: center;
   }
