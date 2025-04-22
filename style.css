@@ -270,9 +270,26 @@ header {
 ==================================== */
 
 body.services-page {
-  background: none; /* We’re using the hero image for background now */
+  background: none;
   padding-top: 80px;
   min-height: 100vh;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  background-image: url("images/img9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0 60px; /* top & bottom space for text and cards */
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 
 .hero .services-grid {
@@ -319,21 +336,6 @@ body.services-page {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
-  .hero-image {
-    position: relative;
-    width: 100%;
-    background-image: url("images/img9.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 0 60px; /* top & bottom space for text and cards */
-  }
-}
-
-.hero {
-  position: relative;
-  padding-bottom: 20px;
 }
 
 /* ====================================
