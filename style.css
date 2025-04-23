@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  min-height: 100vh;
   scroll-behavior: smooth;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -79,6 +78,7 @@ header {
   display: none;
 }
 
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -142,6 +142,7 @@ header {
   z-index: 2;
 }
 
+/* Hero Animations */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -210,148 +211,29 @@ header {
   background-color: #eee;
 }
 
-/* Contact box inside hero section */
-.hero-contact-box {
-  margin-top: 40px;
-  padding: 30px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  max-width: 600px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  animation: fadeIn 1.2s ease-in-out;
-  -webkit-backdrop-filter: blur(4px); /* Safari and iOS fix */
-  backdrop-filter: blur(4px); /* Modern browsers */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.hero-contact-box h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-}
-
-.hero-contact-box p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #ddd;
-}
-
-.contact-details p {
-  margin: 5px 0;
-}
-
-/* Responsive hero adjustments */
-@media (max-width: 768px) {
-  .hero {
-    top: auto;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .hero-contact-box {
-    margin-top: 20px;
-    padding: 20px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
 /* ====================================
-   Services Page – Fullscreen Hero Image
+   Services Page Background
 ==================================== */
-.services-hero-image {
-  background-image: url("images/img9.jpg");
+body.services-page {
+  background-image: url("images/img9.jpg"); /* Change to whichever image you want */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh; /* slightly shorter */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  padding-top: 80px;
 }
 
-.services-hero-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 1;
-}
-
-.services-hero-image .hero {
-  z-index: 2;
+.services-section {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6); /* dark semi-transparent box */
   color: white;
+  border-radius: 8px;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  animation: fadeUp 1s ease-out;
-}
-
-.services-hero-image .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.services-hero-image .hero p {
-  font-size: 1.2rem;
-  color: #ddd;
-}
-
-/* Animation */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Mobile tweaks */
-@media (max-width: 768px) {
-  .services-hero-image {
-    height: 100vh;
-    padding: 0;
-  }
-
-  .services-hero-image .hero {
-    padding: 20px;
-  }
-
-  .services-hero-image .hero h1 {
-    font-size: 2rem;
-  }
-
-  .services-hero-image .hero p {
-    font-size: 1rem;
-  }
 }
 
 /* ====================================
-   About Page
+   About Page Background
 ==================================== */
 body.about-page {
   background-image: url("images/img6.jpg");
@@ -359,15 +241,15 @@ body.about-page {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
 }
-
+/* ====================================
+   About Page Content Styles
+==================================== */
 .about-section {
   max-width: 900px;
   margin: 100px auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark box */
   color: white;
   border-radius: 8px;
   text-align: center;
@@ -386,42 +268,57 @@ body.about-page {
 }
 
 /* ====================================
-   Gallery Page
+   Gallery Page Background
 ==================================== */
 body.gallery-page {
-  background-image: url("images/img5.jpg");
+  background-image: url("images/img5.jpg"); /* or any image you prefer */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
 }
 
 .gallery-section {
   max-width: 900px;
   margin: 100px auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
   color: white;
   border-radius: 8px;
   text-align: center;
 }
 
 /* ====================================
-   FAQs Page
+   FAQs Page Background
 ==================================== */
 body.faqs-page {
-  background-image: url("images/img7.jpg");
+  background-image: url("images/img7.jpg"); /* Or swap with any of your uploaded images */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
+}
+.faqs-section {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  color: white;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.faqs-section {
+/* ====================================
+   Contact Page Background
+==================================== */
+body.contact-page {
+  background-image: url("images/img8.jpg"); /* Swap with any other if preferred */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+.contact-section {
   max-width: 800px;
   margin: 100px auto;
   padding: 30px;
@@ -432,64 +329,23 @@ body.faqs-page {
 }
 
 /* ====================================
-   Contact Page
-==================================== */
-body.contact-page {
-  background-image: url("images/img8.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
-}
-
-.contact-section {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 40px 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-.contact-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-.contact-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 15px;
-  color: #ddd;
-}
-
-/* ====================================
    Quote Page – Form & Animation
 ==================================== */
-
 body.quote-page {
   background-image: url("images/heroquote.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
-  min-height: 100vh;
-  height: auto;
 }
 
 .quote-container {
   max-width: 700px;
-  width: 90%;
   margin: 80px auto;
   padding: 40px 30px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgb(0, 0, 0);
   border-radius: 8px;
-  color: white;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1.2s ease-in-out;
 }
 
@@ -497,19 +353,19 @@ body.quote-page {
   text-align: center;
   font-size: 1.75rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .quote-container p {
   text-align: center;
+  color: #ffffff;
   margin-bottom: 30px;
-  color: #ddd;
 }
 
 .quote-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 100%;
 }
 
 .quote-form input,
@@ -519,10 +375,6 @@ body.quote-page {
   border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #000;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .quote-form textarea {
@@ -545,6 +397,17 @@ body.quote-page {
   background-color: #004466;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .quote-form input:focus,
 .quote-form textarea:focus,
 .quote-form select:focus {
@@ -559,37 +422,3 @@ body.quote-page {
 .quote-form select:hover {
   border: 2px solid #00bfff;
 }
-
-/* === Fade-in Animation === */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* === Mobile Adjustments === */
-@media (max-width: 768px) {
-  .quote-container {
-    margin: 60px auto;
-    padding: 25px 20px;
-  }
-
-  .quote-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .quote-container p {
-    font-size: 1rem;
-  }
-
-  .quote-form input,
-  .quote-form textarea,
-  .quote-form select {
-    font-size: 1rem;
-  }
-} /* ✅ this is now properly closed */
